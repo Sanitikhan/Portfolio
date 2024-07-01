@@ -4,128 +4,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio — Acceuil</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="images/logo_t.png" type="image/png">
+    <link rel="icon" href="../images/logo_t.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar container">
-        <a class="logo">Portfolio</a>
-        <div class="menu">
-            <ul class="list">
-                <li><a href="#section1">Présentation</a></li>
-                <li><a href="#section2">Expérience</a></li>
-                <li><a href="#section3">Compétences</a></li>
-                <li><a href="#section4">Projets</a></li>
-                <li><a href="#section5">Contact</a></li>
+    
+    <!--NAVBAR-->
+    <div class="navbar">
+        <div class="brand-logo">
+            <img src="../images/logo_t.png" width="80px">
+        </div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="expériences.html">Expériences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a class="btn-contact" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact</a></li>
             </ul>
         </div>
-    </nav>
-
-    <div class="background">
-        <img src="images/background.png" class="background">
-        <div class="text-overlay">ANAËLLE BOYER</div>
     </div>
 
-    <section id="section1">
-        <h2>Présentation</h2>
-        <p>
-            Étudiante en première année en informatique à l'ESGI de Lyon.
-            J'ai développé une passion pour le développement web et logiciel.
-            Mes principaux centres d'intérêts sont la musique, la philosophie, la littérature et les voyages.
-            J'ai commencé à découvrir la création de site (HTML et CSS) dans le cadre d'un cours de seconde, au lycée.
-            <br>
-            Je me décrirai comme discrète, sérieuse, patiente et curieuse.
-        </p>
-    </section>
-    <section id="section2">
-        <h2>Expérience</h2>
-   
-    </section>
-    <section id="section3">
-        <h2>Compétences</h2>
-        <div class="competence">
-            <h3>Langage</h3>
-            <ul>
-                <li>
-                    <span>HTML</span>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 90%;"></div>
-                    </div>
-                </li>
-                <li>
-                    <span>CSS</span>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 85%;"></div>
-                    </div>
-                </li>
-                <li>
-                    <span>JavaScript</span>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                    </div>
-                </li>
-                <li>
-                    <span>PHP</span>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 75%;"></div>
-                    </div>
-                </li>
-                <li>
-                    <span>Linux</span>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 65%;"></div>
-                    </div>
-                </li>
-                <li>
-                    <span>Python</span>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 55%;"></div>
-                    </div>
-                </li>
-                <li>
-                    <span>Langage C</span>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 45%;"></div>
-                    </div>
-                </li>
-            </ul>
+    <div class="container-fluid">
+        <div class="ftitle">
+            <p class="gtitle">Portfolio</p>
         </div>
-        <div class="competence">
-            <h3>Design Graphique</h3>
-            <ul>
-                <li>
-                    <span>Canva</span>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 70%;"></div>
-                    </div>
-                </li>
-                <li>
-                    <span>Figma</span>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 20%;"></div>
-                    </div>
-                </li>
-                <li>
-                    <span>Notion</span>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 60%;"></div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section id="section4">
-        <h2>Projets</h2>
-        <p>Contenu de la section 4...</p>
-    </section>
-    <section id="section5">
-        <h2>Contact</h2>
-        <p>Contenu de la section 4...</p>
-    </section>
 
+        <!--PRESENTATION-->
+        <div class="card-presentation">
+            <div class="card-body">
+                <h5 class="card-title">Présentation</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Anaëlle BOYER</h6>
+                <p class="card-text">Étudiante en première année en informatique à l'ESGI de Lyon.
+                    J'ai développé une passion pour le développement web et logiciel.
+                    Mes principaux centres d'intérêts sont la musique, la philosophie, la littérature, les voyages et la photographie.
+                    J'ai commencé à découvrir la création de site (HTML et CSS) dans le cadre d'un cours de seconde, au lycée.
+                    <br>
+                    Je me décrirai comme discrète, sérieuse, patiente et curieuse.</p>
+                <div class="btn-presentation">
+                    <a href="#" class="btn-cv">Mon CV</a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Me contacter → </a>
+                </div>
+            </div>
+          </div>
+
+          <!--TIMELINE-->
+        <div class="timeline">
+            <section id=timeline>
+                <h1>Mon parcours</h1>
+                <div class="timeline-card-wrapper">
+                    <div class="timeline-card timeline-card--step1">
+                        <div class="head">
+                            <div class="number-box">
+                                <span>01</span>
+                            </div>
+                            <h2><span class="small">2017</span> Stage d'observation</h2>
+                        </div>
+                        <div class="body">
+                            <p>Au collège, j'ai du effectuer un stage d'observation.
+                                Durant celui-ci, j'ai pu effectuer plusieurs missions : accueillir, faire des shampoings, nettoyer et ranger des livraisons.
+                                <br><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                                  </svg>
+                                  | Villeurbanne, France.
+                            </p>
+                            <img src="../images/parcours/studio.jpg" alt="Graphic">
+                        </div>
+                    </div>
+            
+                    <div class="timeline-card timeline-card--step2">
+                        <div class="head">
+                            <div class="number-box">
+                                <span>02</span>
+                            </div>
+                            <h2><span class="small">2018-2022</span> Baccalauréat</h2>
+                        </div>
+                        <div class="body">
+                            <p>J'ai obtenu mon baccalauréat en général avec les spécialités :
+                                Sciences Economiques et Sociales, Humanités, Littérature et Philosophie, et Langues, Littérature et Civilisations Étrangères Anglaises.
+                                <br><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                                  </svg>
+                                  | Villeurbanne, France.
+                            </p>
+                            <img src="../images/parcours/fays.jpg" alt="Graphic">
+                        </div>
+                    </div>
+            
+                    <div class="timeline-card timeline-card--step3">
+                        <div class="head">
+                            <div class="number-box">
+                                <span>03</span>
+                            </div>
+                            <h2><span class="small">2022</span> Certification Pix</h2>
+                        </div>
+                        <div class="body">
+                            <p>Au cours de mes années de lycée, j'ai dû obligatoirement passer la certification Pix qui est une plateforme d'évaluation et de certification des compétences numériques.
+                                <br><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                                  </svg>
+                                  | Villeurbanne, France.
+                            </p>
+                            <img src="../images/parcours/pix.png" alt="Graphic">
+                        </div>
+                    </div>
+            
+                    <div class="timeline-card timeline-card--step4">
+                        <div class="head">
+                            <div class="number-box">
+                                <span>04</span>
+                            </div>
+                            <h2><span class="small">2022-2023</span> Philosophie</h2>
+                        </div>
+                        <div class="body">
+                            <p>A la sortie du lycée, j'ai suivi la voie de la philosophie.
+                                J'ai effectué un an complet en licence de philosophie avant de me rendre compte du système de la fac ne me convenant pas.
+                                <br><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                                  </svg>
+                                  | Lyon 7<sup>e</sup>, France.
+                            </p>
+                            <img src="../images/parcours/philo.jpg" alt="Graphic">
+                        </div>
+                    </div>
+            
+                    <div class="timeline-card timeline-card--step5">
+                        <div class="head">
+                            <div class="number-box">
+                                <span>05</span>
+                            </div>
+                            <h2><span class="small">2023-2026</span> Informatique</h2>
+                        </div>
+                        <div class="body">
+                            <p>Je me suis reconverti dans un autre domaine, l'informatique.
+                                Ce domaine est maintenant celui dans lequel je baigne complètement et celui dans lequel je compte rester très longtemps.
+                                <br><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                                  </svg>
+                                  | Lyon 3<sup>e</sup>, France.
+                            </p>
+                            <img src="../images/parcours/sciencesu.jpg" alt="Graphic">
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Contactez-moi</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <a href="https://github.com/Sanitikhan">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                        | Sanitikhan
+                    </a>
+                    <a href="www.linkedin.com/in/anaëlle-boyer-84b6742b2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                          </svg>
+                        | Anaëlle Boyer
+                    </a>
+                    <a href="mailto:anaelle.boyer.69@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                        </svg>
+                        | anaelle.boyer.69@gmail.com
+                    </a>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
-
 </html>
