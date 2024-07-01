@@ -149,6 +149,36 @@ li a:hover {
 	margin-top: 40px;
 }
 
+.ci {
+    margin: 80px;
+}
+
+.ci h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin: 80px;
+}
+
+.ci .mini-card {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+	padding: 40px;
+	background-color: #ffffff3c;
+	border: 3px solid #fff;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
+}
+
+.ci .mini-card svg {
+    margin: 15px;
+}
+
+.ci h3 {
+    font-weight: 600;
+    margin: 5px;
+}
+
 /*PAGE EXPERIENCES*/
 .experiences h2 {
     margin: 50px;
@@ -309,11 +339,10 @@ li a:hover {
 .timeline {
     padding: 100px 0;
 }
-.timeline h1 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 200;
-    margin-bottom: 20px;
+.timeline h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin: 80px;
 }
 .timeline .timeline-card-wrapper {
     position: relative;
@@ -708,7 +737,6 @@ section {
 .modal {
     margin-top: 150px;
 }
-
 .modal .modal-content {
     color: #000;
     background-color: #ffffffa8;
@@ -716,18 +744,15 @@ section {
 	border-radius: 15px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
 }
-
 .modal .modal-body a {
     display: block;
     text-decoration: none;
     color: #000;
 }
-
 .modal .modal-body a svg {
     margin-right: 10px;
     margin-left: 5px;
 }
-
 .modal .btn-secondary {
     background-color: #6EB4DC;
     border: 2px solid #fff;
@@ -736,8 +761,6 @@ section {
     background-color: #B8DAEE;
     border: 2px solid #fff;
 }
-
-
 
 
 /*SCROLLBAR*/
